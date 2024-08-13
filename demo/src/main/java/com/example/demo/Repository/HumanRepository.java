@@ -5,9 +5,9 @@ import java.util.Optional;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.example.demo.Entity.Machine;
+import com.example.demo.Entity.Human;
 
 @Repository
-public interface HumanRepository extends CrudRepository<Machine, Long>{
-    Optional<Machine> findById(Long id);
+public interface HumanRepository extends CrudRepository<Human, Long>{
+    Optional<Human> findById(Long id);
 } 
