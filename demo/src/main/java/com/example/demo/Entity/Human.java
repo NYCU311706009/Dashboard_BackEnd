@@ -16,8 +16,8 @@ import lombok.Data;
 @Data
 public class Human {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "machine_seq")
-    @SequenceGenerator(name="machine_seq", sequenceName = "machine_sequence", initialValue = 1, allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "human_seq")
+    @SequenceGenerator(name="human_seq", sequenceName = "human_sequence", initialValue = 1, allocationSize = 1)
     private Long id;
 
     public enum Department {

@@ -199,8 +199,7 @@ INSERT INTO human (department, current_area) VALUES
 ('ENGINEER', 'A'),
 ('TESTING', 'A'),
 ('EQUIPMENT', 'B'),
-('PRODUCTION', 'C')
-INSERT INTO discription (note) VALUES
+('PRODUCTION', 'C');
+INSERT INTO description (note) VALUES
 ('故障機台記得修'),
-('生產統計在首頁')
-;
+('生產統計在首頁');
