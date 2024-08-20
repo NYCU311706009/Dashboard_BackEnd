@@ -1,6 +1,6 @@
-2024-08-13 19:16:51.504206+08:00 jdbc[3]: exception
+2024-08-19 17:20:28.179638+08:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MACHINE" not found (this database is empty); SQL statement:
 SELECT 1 FROM machine LIMIT 1 [42104-224]
-2024-08-13 19:16:51.516076+08:00 jdbc[3]: exception
+2024-08-19 17:20:28.187617+08:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HUMAN" not found (this database is empty); SQL statement:
 SELECT 1 FROM human LIMIT 1 [42104-224]

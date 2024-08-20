@@ -10,3 +10,7 @@ CREATE TABLE human (
     department VARCHAR(20) NOT NULL,
     current_area VARCHAR(20) NOT NULL
 );
+CREATE TABLE discription (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    note VARCHAR(20) NOT NULL,
+);
