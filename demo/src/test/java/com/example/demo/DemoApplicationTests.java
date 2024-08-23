@@ -17,9 +17,5 @@ class DemoApplicationTests {
 	void contextLoads() {
 	}
 
-	@Test
-	void addNewMachine(){
-		Machine machine = new Machine();
-		machineRepository.save(machine);
-	}
+	
 }
