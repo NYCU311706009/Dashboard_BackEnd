@@ -5,9 +5,12 @@ import java.util.Optional;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.example.demo.Entity.Description;
+import com.example.demo.Entity.MachineRecord;
+
+
 
 @Repository
-public interface DescriptionRepository extends CrudRepository<Description, Long>{
-    Optional<Description> findById(long id); 
+public interface RecordRepository extends CrudRepository<MachineRecord, Long>{
+    Optional<MachineRecord> findById(Long id);
+
 }

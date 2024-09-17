@@ -27,37 +27,15 @@ public class Human {
         ENGINEER // 工程單位
     }
 
-    public enum Area {
-        A,
-        B,
-        C,
-        D
-    }
+    
     @Enumerated(EnumType.STRING)
     private Department department;
 
-    @Enumerated(EnumType.STRING)
-    private Area currentArea;
+    
 
     public Human(){
         this.department = Department.PRODUCTION;
-        this.currentArea = Area.A;
     }
 
-    public void setToAreaA() {
-        this.currentArea = Area.A;
-    }
-
-    public void setToAreaB() {
-        this.currentArea = Area.B;
-    }
-
-    public void setToAreaC() {
-        this.currentArea = Area.C;
-    }
-
-    public void setToAreaD() {
-        this.currentArea = Area.D;
-    }
 
 }

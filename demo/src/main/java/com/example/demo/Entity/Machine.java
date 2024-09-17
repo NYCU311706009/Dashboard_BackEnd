@@ -1,11 +1,17 @@
 package com.example.demo.Entity;
 
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.SequenceGenerator;
 import lombok.Data;
 
@@ -40,8 +46,12 @@ public class Machine {
     @Enumerated(EnumType.STRING)
     private State currentState; //狀態  
 
-    private int quantity;       //產量
+    @OneToMany(mappedBy = "machine", cascade = CascadeType.ALL)
+    @JsonManagedReference
+    private List<MachineRecord> records;
     
+
+
     @Enumerated(EnumType.STRING)
     private Department currentDepartment;
 
@@ -51,7 +61,6 @@ public class Machine {
     
     public Machine(){
         this.currentState = State.IDLE; // Default Value
-        this.quantity = 0;
         this.currentDepartment = Department.EQUIPMENT;
         this.currentArea = Area.A;
     }
